@@ -26,7 +26,7 @@ const UpdateCard = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/cards/getone/${idInput}`, {
+      const response = await fetch(`https://mern-wt.onrender.com/cards/getone/${idInput}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -64,7 +64,7 @@ const UpdateCard = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/cards/update/${idInput}`, {
+      const response = await fetch(`https://mern-wt.onrender.com/api/cards/update/${idInput}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
