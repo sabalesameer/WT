@@ -30,7 +30,7 @@ const Summer = () => {
   useEffect(() => {
     if (token && !isTokenExpired) {
       setIsFetching(true);
-      fetch("http://localhost:5000/api/cards/summer", {
+      fetch("https://mern-wt.onrender.com/api/cards/summer", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
