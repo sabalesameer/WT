@@ -30,7 +30,7 @@ const Winter = () => {
   useEffect(() => {
     if (token && !isTokenExpired) {
       setIsFetching(true);
-      fetch("http://localhost:5000/api/cards/winter", {
+      fetch("https://mern-wt.onrender.com/api/cards/winter", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
