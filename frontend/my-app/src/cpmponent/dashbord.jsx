@@ -11,7 +11,7 @@ const Dashboard = () => {
   // Logout function
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/users/logout", {
+      const response = await fetch("https://mern-wt.onrender.com/api/users/logout", {
         method: "GET",
         credentials: "include", // Ensure cookies are sent with the request
       });
