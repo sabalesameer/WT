@@ -30,7 +30,7 @@ const Rain = () => {
   useEffect(() => {
     if (token && !isTokenExpired) {
       setIsFetching(true);
-      fetch("http://localhost:5000/api/cards/rain", {
+      fetch("https://mern-wt.onrender.com/api/cards/rain", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
