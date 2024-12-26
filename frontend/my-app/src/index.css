@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Gilroy";
+}  
+
+::selection{
+  color: rgb(238, 167, 13);
+}
+.cardBtn{
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    color: rgb(238, 167, 13);
+  }
+  50% {
+    color: #52525b;
+  }
+}
+
+.blinking-text {
+  animation: blink 2s infinite ease-in;
+  text-align: center;
+}
+
+.BoxShadow {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
