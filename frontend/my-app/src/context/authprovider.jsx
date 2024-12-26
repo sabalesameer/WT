@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (email, password, roll) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/users/login", {
+      const response = await axios.post("https://mern-wt.onrender.com/api/users/login", {
         email,
         password,
         roll,
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
 
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/api/cards/all", {
+        const response = await axios.get("https://mern-wt.onrender.com/api/cards/all", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
