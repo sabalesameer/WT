@@ -23,7 +23,7 @@ const DeleteCard = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/cards/getone/${idInput}`, {
+      const response = await fetch(`https://mern-wt.onrender.com/api/cards/getone/${idInput}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -56,7 +56,7 @@ const DeleteCard = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/cards/delete/${card._id}`, {
+      const response = await fetch(`https://mern-wt.onrender.com/api/cards/delete/${card._id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
